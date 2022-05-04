@@ -1,0 +1,5 @@
+package machine;
+
+public enum States {
+    WAITING_COMMAND, BUY;
+}
