@@ -1,0 +1,17 @@
+package machine;
+
+import java.util.Scanner;
+
+public class CoffeeMachine {
+    public static void main(String[] args) {
+
+        boolean turn = true;
+        Scanner scan = new Scanner(System.in);
+        Machine machine = new Machine();
+
+        do{
+            String command = scan.next();
+            turn = machine.issueCommand(command);
+        }while (turn);
+    }
+}
